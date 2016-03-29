@@ -2,13 +2,26 @@
 #
 std
 mean
-repmat
+
 
 # 
 plot
+figure: open a new figure window
+hold on: draw continue with this figure
 
 # 
+length: number of row if matrix
+size
+max: max(max(X))
+#
+ones
 zero
+rand
+repmat
+
+# 
+inv
+pinv
 
 # 
 fprintf
