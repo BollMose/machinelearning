@@ -1,0 +1,20 @@
+
+#
+std
+mean
+repmat
+
+# 
+plot
+
+# 
+zero
+
+# 
+fprintf
+pause: wait for user input
+
+# cmd
+clear
+close all
+clc
