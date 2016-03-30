@@ -1,13 +1,23 @@
 
 #
-std
-mean
+std: for each column vector
+mean: for each column vector
 
+# fminunc
+Minimize the function f(x)=3X1^2 + 2X1X2 + X2^2 - 4X1 + 5X2;
+Call fminunc to find a minimum of fun near [1,1].
+
+fun = @(x)3*x(1)^2 + 2*x(1)*x(2) + x(2)^2 - 4*x(1) + 5*x(2);
+x0 = [1,1];
+[x,fval] = fminunc(fun,x0);
 
 # 
 plot
 figure: open a new figure window
 hold on: draw continue with this figure
+xlabel
+ylabel
+legend
 
 # 
 length: number of row if matrix
@@ -18,6 +28,7 @@ ones
 zero
 rand
 repmat
+find: find(x == 1)
 
 # 
 inv
