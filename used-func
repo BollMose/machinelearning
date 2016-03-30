@@ -21,14 +21,16 @@ legend
 
 # 
 length: number of row if matrix
-size
+size: 
 max: max(max(X))
+
 #
 ones
 zero
 rand
 repmat
-find: find(x == 1)
+find: find(x == 1) return the indexs of which  == 1
+P = (X >= 0.5): return a matrix, if element>=0.5 as 1, otherwise 0
 
 # 
 inv
