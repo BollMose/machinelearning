@@ -1,0 +1,20 @@
+
+# costFunction
+hx = sigmoid(X * theta); 
+J = 1/m * sum(-y .* log(hx) - (1 - y) .* log(1-hx)); 
+grad = 1/m * (X' * (hx - y)); 
+
+
+# costFunctionReg 
+hx = sigmoid(X * theta);
+theta(1) = 0;
+J = 1/m * sum(-y .* log(hx) - (1 - y) .* log(1-hx)) + lambda/2/m*sum(theta.^2);
+grad = 1/m * (X' * (hx - y)) + lambda/m*theta;
+
+# sigmoid
+g = 1 ./ (1 + exp(-z));
+
+# predict
+hx = X * theta;
+p = (sigmoid(hx)>=0.5);
+
