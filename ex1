@@ -1,0 +1,18 @@
+
+# computeCost/Multi
+ hx = X * theta;
+ J = 1/2/m * sum((hx - y).^2);
+ %J = sum((X * theta - y).^2)/2/m;
+
+# gradientDescent/mult
+J_history(iter) = computeCost(X, y, theta);
+
+# featureNormalize
+mu = mean(X); 
+sigma = std(X); 
+X_norm = (X_norm - repmat(mu,size(X,1),1)) ./ (repmat(sigma,size(X,1),1));
+
+
+# normalEqn
+theta = pinv((X' * X)) * X' * y;
+
